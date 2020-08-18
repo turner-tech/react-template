@@ -1,0 +1,157 @@
+// Theme Variables
+//Font must be imported from  https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,600,600italic////
+
+
+$primaryFont: 'Open Sans', sans-serif !important;
+
+$primaryColor: #f96302;
+$backingColor: #253238;
+$backgroundColor: #ffffff;
+$secondaryBackground: #e0e0e0;
+$borderColor: #d9d9d9;
+$activeBorderColor: #A1A1A1;
+$subHeaderBackColor: #ffffff;
+
+$primaryTextColor: #222222;
+$primaryTextColorAlt: #333333;
+$secondaryTextColor: #767676;
+$tagTextColor: rgba(0,0,0,.65);
+
+$hoverBKG: #fdefe4;
+
+$primaryGradient: #f96302;
+$secondaryGradient: #ed4a04;
+$positiveColor: green !important;
+$negativeColor: red !important;
+$fullWidth: 100%;
+
+//CUSTOM SELECT AND INPUT CONTROLS NOT AVAILABLE IN ROOT//
+
+.ant-select-selection:hover, .ant-input:hover, .ant-input:focus {
+    border-color: $activeBorderColor;
+    border-right-width: 1px !important;
+}
+
+.ant-input {
+    &:hover , &:focus {
+        border-color: $activeBorderColor !important;
+    }
+}
+
+:global(.ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled)) , :global(.ant-select-dropdown-menu-item-selected) {
+    background: $hoverBKG;
+}
+
+//This is the slight padding between rows of check boxes//
+
+.ant-checkbox-group-item {
+    margin-bottom: 8px;
+}
+
+//Additional Transition Timing Control //
+
+.ant-btn {
+    transition: 0.15s;
+}
+.ant-table-thead > tr, .ant-table-tbody > tr {
+    -webkit-transition: all 0.15s, height 0s;
+    transition: all 0.15s, height 0s;
+}
+
+
+//Ant Tag Text Color for Accessibility //
+
+.ant-tag {
+    color: $tagTextColor !important;
+}
+
+
+// CALENDAR FOOTER HOT BUTTONS IF USED //
+.ant-tag-blue {
+    color: $primaryColor;
+    background: transparent;
+    border-color: $primaryColor;
+    transition: 0.15s;
+    &:hover {
+        color: #ffffff;
+        background: $primaryColor ;
+        border-color:$primaryColor;
+
+    }
+}
+
+// Modal Header Font Weight Override //
+
+.ant-modal-title {
+    font-weight: 600 !important;
+}
+
+.ant-modal-confirm-body .ant-modal-confirm-title {
+    font-weight: 600;
+}
+//////////// FOR USE TO MAKE SURE CUSTOMIZATIONS MATCH THE GUIDE /////////////
+
+@mixin p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: $primaryTextColorAlt;
+}
+
+@mixin label {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: $primaryTextColorAlt;
+}
+
+
+@mixin caption {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $secondaryTextColor;
+}
+
+@mixin h1 {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 700;
+    color: $primaryTextColor;
+}
+
+@mixin h2 {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 600;
+    color: $primaryTextColor;
+}
+
+@mixin h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: $primaryTextColor;
+}
+
+@mixin h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: $primaryTextColor;
+}
+
+@mixin h4 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: $primaryTextColor;
+}
+
+@mixin h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: $primaryTextColor;
+}
+
